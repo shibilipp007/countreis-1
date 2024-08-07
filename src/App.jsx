@@ -21,17 +21,17 @@ function App() {
     <>
       <div>
         <h1>Countreis</h1>
-        <div className="card">
+        <ul className="list">
           {countries.map((country) => (
-            <div key={country.id} className="flex">
+            <li key={country.id} className="list-item">
               <img
                 src={country.flags.png}
                 alt={`flag of ${country.name.common}`}
               />
               <h3>{country.name.common}</h3>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </>
   );
